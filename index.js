@@ -14,8 +14,6 @@ for (const file of commandFiles) {
     bot.commands.set(command.name, command);
 }
 
-const token = 'NjY1NjI4MjI1OTE3MTU3Mzg4.XhoZaw.RNk00L4cKv7f9wvUBED0JhuIUhk';
-
 const PREFIX = '?'
 
 bot.on('ready', () => {
