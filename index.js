@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 const ms = require('ms');
 const fs = require('fs');
 
-module.exports = { version : '1.0.2' };
+module.exports = { version : '1.0.3' };
 
 bot.commands = new Discord.Collection();
 
