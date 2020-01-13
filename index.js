@@ -17,6 +17,7 @@ for (const file of commandFiles) {
 const PREFIX = '?'
 
 bot.on('ready', () => {
+    bot.user.setGame('Swayy945', 'https://twitch.tv/swayy945')
     console.log('This bot is online!')
 })
 
