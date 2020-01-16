@@ -30,10 +30,18 @@ module.exports = {
                     .setColor(0xD0B02B);
                 message.channel.sendEmbed(clear);
                 break;
+            case 'roles':
+                const roles = new Discord.RichEmbed()
+                    .setTitle('Roles')
+                    .addField('Usage: `?roles`', 'React with emotes to gain or remove roles.')
+                    .setFooter('SwayyBot v' + version)
+                    .setColor(0xD0B02B);
+                message.channel.sendEmbed(roles);
+                break;
             default:
                 const help = new Discord.RichEmbed()
                     .setTitle('Help')
-                    .addField('Prefix: ?', '`admin, info, ping`')
+                    .addField('Prefix: ?', '`admin, info, ping, roles`')
                     .setFooter('SwayyBot v' + version)
                     .setColor(0xD0B02B);
                 message.channel.sendEmbed(help);
