@@ -12,7 +12,7 @@ module.exports = {
                 if (embedMsg) {
                     message.react(':Minecraft:667493014360555530')
                     .then(reaction => reaction.message.react(':RocketLeague:667493014137995314'))
-                    .then(reaction => reaction.message.delete(60000))
+                    .then(reaction => reaction.message.delete(20000))
                 }
             }
             return;
