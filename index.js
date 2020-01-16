@@ -12,8 +12,6 @@ for (const file of commandFiles) {
     bot.commands.set(command.name, command);
 }
 
-const token = require('./package.json');
-
 const PREFIX = '?'
 
 bot.on('ready', () => {
@@ -61,4 +59,4 @@ bot.on('messageReactionAdd', (reaction, user) => {
     member.addRole(role.id)
 })
 
-bot.login(token);
+bot.login(process.env.token);
