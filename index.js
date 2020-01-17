@@ -59,4 +59,9 @@ bot.on('messageReactionAdd', (reaction, user) => {
     member.addRole(role.id)
 })
 
+bot.on('guildMemberAdd', member => {
+    var role = member.guild.roles.find('name', 'SwayyCitizen');
+    member.addRole(role)
+})
+
 bot.login(process.env.token);
